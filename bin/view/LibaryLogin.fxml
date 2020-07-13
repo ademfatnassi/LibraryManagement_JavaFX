@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anPane" prefHeight="422.0"
+	prefWidth="650.0" stylesheets="@../css/application.css"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.LibraryLoginController">
+	<children>
+		<Pane fx:id="pane" layoutX="169.0" layoutY="64.0"
+			prefHeight="295.0" prefWidth="312.0">
+			<children>
+				<Label fx:id="textViewL" layoutX="111.0" layoutY="29.0"
+					text="LogIN" />
+				<JFXTextField fx:id="username" layoutX="31.0"
+					layoutY="76.0" prefHeight="25.0" prefWidth="248.0"
+					promptText="Entrer Username" style="-: ;" />
+				<JFXPasswordField fx:id="password" layoutX="31.0"
+					layoutY="148.0" prefHeight="25.0" prefWidth="248.0"
+					promptText="Entrer Mot de passe" />
+				<JFXButton fx:id="login" buttonType="RAISED"
+					layoutX="32.0" layoutY="223.0" onAction="#createLogin"
+					prefHeight="38.0" prefWidth="248.0" text="Login">
+					<font>
+						<Font name="Roboto Bold" size="15.0" />
+					</font>
+					<ripplerFill>
+						<LinearGradient cycleMethod="REFLECT" endX="1.0"
+							endY="1.0">
+							<stops>
+								<Stop color="#ec8c2b" />
+								<Stop color="#fbb949" offset="1.0" />
+							</stops>
+						</LinearGradient>
+					</ripplerFill>
+				</JFXButton>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

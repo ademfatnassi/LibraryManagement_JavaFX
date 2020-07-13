@@ -1,0 +1,73 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anPane{
+	-fx-background-image: url("../images/bg.png");
+	-fx-background-size: cover ;
+}
+
+.pane{
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(236.0,140.0,43.0) 0.0, rgb(251.0,185.0,73.0) 100.0);
+}
+
+#login{
+	-fx-background-color:linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(236.0,140.0,43.0) 0.0, rgb(251.0,185.0,73.0) 100.0)
+}
+
+#textViewL{
+	-fx-font-family: Roboto;
+	-fx-font-size: 30.0px;
+	-fx-font-weight: bold;
+}
+
+#textViewHeader{
+	-fx-font-family: Roboto;
+	-fx-font-size: 60.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+Button{
+	
+}
+
+JFXButton{
+	-fx-font-family: Roboto;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: lightgrey ;
+}
+
+.addbtn,
+.resetbtn,
+.deletebtn,
+#deletebtn{
+	-fx-font-family: Roboto;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(236.0,140.0,43.0) ;
+}
+
+.addbtn:hover,
+.resetbtn:hover,
+.deletebtn:hover,
+#deletebtn:hover{
+	-fx-font-family: Roboto;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(251.0,185.0,73.0) ;
+}
+
+JFXButton:hover{
+	-fx-font-family: Roboto;
+	-fx-font-size: 20.0px;
+	-fx-font-weight: bold;
+	-fx-background-color: rgb(153.0,153.0,153.0)
+}
+.hide{
+	-fx-opacity: 0.0;
+}
+JFXButton .Backward{
+	-fx-background-color: transparent ;
+	-fx-text-fill: transparent ;
+	 
+}
+

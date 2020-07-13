@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GestionOuvrageController">
+   <children>
+      <Pane fx:id="pane" layoutX="76.0" layoutY="110.0" prefHeight="144.0" prefWidth="1366.0" styleClass="pane" AnchorPane.bottomAnchor="624.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="textViewHeader" layoutX="107.0" layoutY="36.0" text="Gestion Ouvrages" />
+            <JFXButton fx:id="RetourBtn" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="1.0" layoutX="27.0" layoutY="41.0" onAction="#RetourBtnClick" style="-fx-background-color: transparent; -fx-text-fill: transparent;" styleClass="Backward" text=" ">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="52.0">
+                     <image>
+                        <Image url="@../images/left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <GridPane hgap="20.0" layoutX="241.0" layoutY="233.0" prefHeight="361.0" prefWidth="969.0">
+         <children>
+            <JFXButton fx:id="ajoutLivreBtn" contentDisplay="TOP" graphicTextGap="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#ajoutLivre" text="Ajouter Ouvrage">
+               <graphic>
+                  <ImageView fitHeight="238.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/new-book.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="ModifLivrerBtn" contentDisplay="TOP" graphicTextGap="50.0" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#ModifLivre" text="Modifier Ouvrage" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="238.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/modify-book.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="listeLivreBtn" contentDisplay="TOP" graphicTextGap="50.0" layoutX="340.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#afficheLivre" text="Liste Ouvrages" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="238.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/iconfinder_bookshelf_1055107.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <JFXButton fx:id="deleteLivrebtn" layoutX="837.0" layoutY="632.0" onAction="#deleteLivre" prefHeight="53.0" styleClass="deletebtn" stylesheets="@../css/application.css" text="Supprimer" />
+      <JFXTextField fx:id="CINInput" layoutX="444.0" layoutY="624.0" prefHeight="53.0" prefWidth="367.0" promptText="Code Ouvrage à supprimer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifAdherentController">
+	<!-- TODO Add Nodes -->
+	<children>
+		<Pane fx:id="paneAU" layoutX="114.0" layoutY="114.0" prefHeight="156.0" prefWidth="1366.0" style="-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(236.0,140.0,43.0) 0.0, rgb(251.0,185.0,73.0) 100.0);" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="RetourBtn" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="1.0" layoutX="50.0" layoutY="51.0" onAction="#RetourBtnClick" style="-fx-background-color: transparent; -fx-text-fill: transparent;" styleClass="Backward" text=" ">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="52.0">
+                     <image>
+                        <Image url="@../images/left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children></Pane>
+      <Label fx:id="textViewHeader" layoutX="132.0" layoutY="32.0" prefHeight="100.0" prefWidth="877.0" stylesheets="@../css/application.css" text="Modifier un adhérent" />
+      <JFXTextField fx:id="inputDepartEns" layoutX="740.0" layoutY="523.0" prefHeight="41.0" prefWidth="391.0" promptText="Departement Enseignent" styleClass="hide" visible="false" />
+      <JFXTextField fx:id="inputProfesEn" layoutX="740.0" layoutY="582.0" prefHeight="41.0" prefWidth="391.0" promptText="Profession Enseignent" styleClass="hide" visible="false" />
+      <JFXTextField fx:id="inputFiliereEtud" layoutX="217.0" layoutY="586.0" prefHeight="41.0" prefWidth="391.0" promptText="Filiere Etudiant" styleClass="hide" visible="false" />
+      <JFXTextField fx:id="EmailInput" layoutX="217.0" layoutY="461.0" prefHeight="41.0" prefWidth="391.0" promptText="Adresse électrinique Adhérent" />
+      <JFXTextField fx:id="PhoneInput" layoutX="217.0" layoutY="388.0" prefHeight="41.0" prefWidth="391.0" promptText="Numéro de téléphone Adhérent" />
+      <JFXTextField fx:id="PrenomInput" layoutX="740.0" layoutY="388.0" prefHeight="41.0" prefWidth="391.0" promptText="Prénom Adhérent" />
+      <JFXTextField fx:id="NomInput" layoutX="740.0" layoutY="308.0" prefHeight="41.0" prefWidth="391.0" promptText="Nom Adhérent" />
+      <JFXTextField fx:id="CINInput" layoutX="217.0" layoutY="308.0" prefHeight="41.0" prefWidth="391.0" promptText="Carte d'identité nationale (CIN)" />
+      <JFXButton fx:id="resetbtn" layoutX="1200.0" layoutY="675.0" onAction="#resetForm" styleClass="resetbtn" text="Reset" />
+      <JFXButton fx:id="modifbtn" layoutX="1070.0" layoutY="675.0" onAction="#ModifUser" styleClass="addbtn" text="Modifier" />
+      <JFXTextField fx:id="CINInput1" layoutX="384.0" layoutY="200.0" prefHeight="41.0" prefWidth="391.0" promptText="Carte d'identité nationale (CIN)" />
+      <JFXButton fx:id="cherchebtn" layoutX="792.0" layoutY="207.0" onAction="#chercheUser" styleClass="addbtn" text="Chercher" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0"
+	stylesheets="@../css/application.css"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.AjoutAdherentController">
+	<!-- TODO Add Nodes -->
+	<children>
+		<Pane fx:id="paneAU" layoutX="114.0" layoutY="114.0"
+			prefHeight="156.0" prefWidth="1366.0"
+			style="-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(236.0,140.0,43.0) 0.0, rgb(251.0,185.0,73.0) 100.0);"
+			AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Label fx:id="textViewHeader" layoutX="37.0" layoutY="22.0"
+					prefHeight="100.0" prefWidth="877.0"
+					stylesheets="@../css/application.css"
+					text="Ajouter un nouvel adhérent" />
+			</children>
+		</Pane>
+		<JFXTextField fx:id="CINInput" layoutX="121.0"
+			layoutY="242.0" prefHeight="41.0" prefWidth="391.0"
+			promptText="Carte d'identité nationale (CIN)" />
+		<JFXTextField fx:id="NomInput" layoutX="644.0"
+			layoutY="242.0" prefHeight="41.0" prefWidth="391.0"
+			promptText="Nom Adhérent" />
+		<JFXTextField fx:id="PrenomInput" layoutX="644.0"
+			layoutY="322.0" prefHeight="41.0" prefWidth="391.0"
+			promptText="Prénom Adhérent" />
+		<JFXTextField fx:id="PhoneInput" layoutX="121.0"
+			layoutY="322.0" prefHeight="41.0" prefWidth="391.0"
+			promptText="Numéro de téléphone Adhérent" />
+		<JFXRadioButton fx:id="RadioBTN1" layoutX="121.0"
+			layoutY="529.0" text="Etudiant" />
+		<JFXRadioButton fx:id="RadioBTN2" layoutX="231.0"
+			layoutY="529.0" text="Enseignent" />
+		<JFXTextField fx:id="PhoneInput1" layoutX="121.0"
+			layoutY="415.0" prefHeight="41.0" prefWidth="391.0"
+			promptText="Adresse électrinique Adhérent" />
+		<DatePicker fx:id="DateNaissanceInput" layoutX="644.0"
+			layoutY="436.0" prefHeight="25.0" prefWidth="391.0"
+			promptText="Date de Naissance" />
+		<JFXButton fx:id="ajoutbtn" layoutX="653.0" layoutY="534.0"
+			onAction="#ajoutUser" styleClass="addbtn" text="Ajouter" />
+		<JFXButton fx:id="resetbtn" layoutX="765.0" layoutY="534.0"
+			onAction="#resetForm" styleClass="resetbtn" text="Reset" />
+	</children>
+</AnchorPane>

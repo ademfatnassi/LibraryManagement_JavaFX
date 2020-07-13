@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjoutOuvrageController">
+	<children>
+		<Pane fx:id="paneAU" layoutX="319.0" layoutY="14.0" prefHeight="156.0" prefWidth="1366.0" styleClass="pane" AnchorPane.bottomAnchor="612.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Label fx:id="textViewHeader" layoutX="107.0" layoutY="36.0" text="Ajouter un nouvel Ouvrage" />
+            <JFXButton fx:id="RetourBtn" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="1.0" layoutX="39.0" layoutY="43.0" onAction="#RetourBtnClick" style="-fx-background-color: transparent; -fx-text-fill: transparent;" styleClass="Backward" text=" ">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="52.0">
+                     <image>
+                        <Image url="@../images/left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+			</children>
+		</Pane>
+      <Pane layoutX="150.0" layoutY="156.0" prefHeight="612.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="156.0">
+         <children>
+      		<JFXTextField fx:id="titreInput" layoutX="174.0" layoutY="136.0" prefHeight="41.0" prefWidth="391.0" promptText="Titre d'ouvrage" />
+      		<JFXTextField fx:id="auteurInput" layoutX="174.0" layoutY="229.0" prefHeight="41.0" prefWidth="391.0" promptText="Auteur d'ouvrage" />
+      		<JFXTextField fx:id="categorieInput" layoutX="174.0" layoutY="340.0" prefHeight="41.0" prefWidth="391.0" promptText="Catégorie d'ouvrage" />
+      		<DatePicker fx:id="DateEditionInput" layoutX="706.0" layoutY="169.0" prefHeight="41.0" prefWidth="391.0" />
+      		<Line endX="100.0" layoutX="642.0" layoutY="282.0" startX="-100.0" style="-fx-rotate: 90;" />
+      		<JFXTextField fx:id="nbCopieExemp" layoutX="391.0" layoutY="466.0" prefHeight="41.0" prefWidth="391.0" promptText="Nombre de copies d'exemplaire" />
+      
+      		<JFXButton fx:id="ajoutbtn" layoutX="959.0" layoutY="462.0" onAction="#ajoutBook" styleClass="addbtn" text="Ajouter" />
+      		<JFXButton fx:id="resetbtn" layoutX="1091.0" layoutY="462.0" onAction="#resetForm" styleClass="resetbtn" text="Reset" />
+            <JFXTextField fx:id="status" layoutX="718.0" layoutY="373.0" prefHeight="41.0" prefWidth="391.0" promptText="Status d'exemplaire" visible="false" />
+            <JFXTextField fx:id="idouvrage" layoutX="718.0" layoutY="262.0" prefHeight="41.0" prefWidth="391.0" promptText="Code ouvrage" />
+            <Label fx:id="label2" layoutX="718.0" layoutY="134.0" text="Date d'édition :" />
+         </children>
+      </Pane>
+	</children>
+</AnchorPane>
